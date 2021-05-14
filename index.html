@@ -1,0 +1,68 @@
+
+<html>
+  <head>
+    <title>RecogSmart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="col-xs-12 header">
+        <h1>Image identifier
+          <img src="logo.gif">
+        </h1>
+      </div>
+      <div class="col-sm-6 col-xs-12 camera_div">
+          <h3>Your webcam:</h3>
+          <div id="camera" style="border-style:dashed;"></div>
+          <br>
+          <button class="btn btn-info" id="clickBtn" onclick="takeSnapshot()" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Click Image</button>
+          <br> <br>
+      </div>
+      <div class="col-sm-6 col-xs-12 camera_div">
+        <h3>Your result:</h3>
+        <div id="result" style="border-style:dashed;"></div>
+        <br>
+        <button class="btn btn-info" id="resultBtn" onclick="identify()" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Identify Image</button>
+        <br> <br>
+    </div> 
+    <br> <br>
+    </center>  
+    <br> <br>
+    <div class="col-xs-12" id="recognise_div" style="border-top:10px;">
+      <h4 class="col-sm-6 col-xs-12">
+        <span>
+        <img src="bulb.gif"> </span>
+        <span id="objectName"></span>
+      </h4> 
+    </div>
+    <div class="d-flex footer_div">
+      <h3>Developed by Anjali from WhiteHat Jr.</h3>
+    </div>  
+    <br> <br> <br> <br>
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
